@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/add-to-autoload/input_dialog.gd" type="Script" id=2]
+
+[node name="InputDialog" type="ConfirmationDialog"]
+margin_right = 306.0
+margin_bottom = 95.0
+window_title = "Подтверждение..."
+resizable = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+edit_path = NodePath("LineEdit")
+
+[node name="LineEdit" type="LineEdit" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 8.0
+margin_top = 8.0
+margin_right = -8.0
+margin_bottom = -36.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="about_to_show" from="." to="." method="_on_InputDialog_about_to_show"]
+[connection signal="confirmed" from="." to="." method="_on_InputDialog_confirmed"]
+[connection signal="visibility_changed" from="." to="." method="_on_InputDialog_visibility_changed"]
+[connection signal="text_entered" from="LineEdit" to="." method="_on_LineEdit_text_entered"]
