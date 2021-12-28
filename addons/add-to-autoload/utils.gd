@@ -92,12 +92,9 @@ static func get_fs_context_menu(fs_dock:Control)->PopupMenu:
 	
 	for m in popup_menus:
 		m = m as PopupMenu
-#		print()
-#		if not m.get_item_count(): continue
 		menu = m
 		break
-#	if menu:
-#		print(menu.get_item_text(0))
+
 	return menu
 
 

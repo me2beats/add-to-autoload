@@ -27,7 +27,7 @@ func _enter_tree():
 	# problem I faced: I wanted to implement showing this in right-click menu only if the singleton is not added
 	# but there is no methods for that currently.
 	# (yes idk why but you can add multiple singletons with the same script and different names)
-	
+	input_dialog.window_title = "Set new singleton name"
 	var default_settings = {
 		"input_dialog_size" : [input_dialog.rect_size, TYPE_VECTOR2],
 	}

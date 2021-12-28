@@ -5,7 +5,7 @@
 [node name="InputDialog" type="ConfirmationDialog"]
 margin_right = 306.0
 margin_bottom = 95.0
-window_title = "Подтверждение..."
+window_title = "Confirm.."
 resizable = true
 script = ExtResource( 2 )
 __meta__ = {
